@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: 50px auto;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px 20px 100px 20px;
+}
+.input {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 32px;
+}
+.date {
+  color: hsl(0, 1%, 44%);
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+#day-input,
+#month-input,
+#year-input {
+  width: 65px;
+  height: 30px;
+  margin-top: 3px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 1%, 44%);
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  outline: none;
+}
+hr {
+  width: 285px;
+  color: hsl(0, 0%, 8%);
+  margin: 50px 0 40px;
+}
+
+.svg {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  position: absolute;
+  top: 32%;
+}
+svg {
+  padding: 10px;
+}
+.calculator {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 70px;
+}
+.num-color {
+  color: hsl(259, 100%, 65%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
