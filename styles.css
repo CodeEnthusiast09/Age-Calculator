@@ -6,78 +6,140 @@ body {
   background-color: hsl(0, 0%, 86%);
   font-family: "Poppins", sans-serif;
 }
-.container {
-  margin: 50px auto;
-  width: 350px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 20px 20px 100px 20px;
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 575px;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 100px 20px;
+  }
+  .input {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  .date {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+  #day-input,
+  #month-input,
+  #year-input {
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 1%, 44%);
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+  }
+  .svg {
+    display: flex;
+    align-items: center;
+  }
+  .line {
+    width: 485px;
+    color: hsl(0, 0%, 8%);
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  svg {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    top: -8px;
+  }
+  .result {
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 70px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  .num-color {
+    color: hsl(259, 100%, 65%);
+  }
 }
-.input {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-  padding: 20px;
-  font-size: 32px;
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: 50px auto;
+    padding: 0 30px 30px 30px;
+    width: 275px;
+    max-height: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 100px 20px;
+  }
+  .input {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .date {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+  #day-input,
+  #month-input,
+  #year-input {
+    width: 65px;
+    height: 30px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 1%, 44%);
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+  }
+  .svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .line {
+    width: 285px;
+    color: hsl(0, 0%, 8%);
+    margin-top: 40px;
+    /* margin-bottom: 50px; */
+    position: relative;
+    top: 1%;
+  }
+  svg {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+    z-index: 999;
+  }
+  .result {
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 70px;
+    margin-bottom: 50px;
+  }
+  .num-color {
+    color: hsl(259, 100%, 65%);
+  }
 }
-.date {
-  color: hsl(0, 1%, 44%);
-  font-size: 11px;
-  letter-spacing: 3px;
-}
-#day-input,
-#month-input,
-#year-input {
-  width: 65px;
-  height: 30px;
-  margin-top: 3px;
-  border-radius: 5px;
-  border: 1px solid hsl(0, 1%, 44%);
-  padding: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  outline: none;
-}
-.svg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.line {
-  width: 285px;
-  color: hsl(0, 0%, 8%);
-  margin-top: 50px;
-  position: relative;
-  top: -10%;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-svg {
-  background-color: hsl(259, 100%, 65%);
-  border-radius: 50%;
-  padding: 10px;
-  text-decoration: line-through;
-  position: relative;
-  top: -40%;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-.calculator {
-  font-size: 32px;
-  font-weight: 800;
-  font-style: italic;
-  line-height: 70px;
-}
-.num-color {
-  color: hsl(259, 100%, 65%);
-}
+
 .attribution {
   font-size: 11px;
   text-align: center;
