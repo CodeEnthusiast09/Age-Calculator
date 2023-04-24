@@ -22,63 +22,69 @@
   <body>
     <div class="container">
       <div class="input">
-        <div class="date">
-          <p>DAY</p>
+        <div class="date day">
+          <p id="day-header">DAY</p>
           <input
             type="text"
             name="day"
             id="day-input"
-            oninput="day()"
+            oninput="dayValidate()"
             placeholder="DD"
             maxlength="2"
             size="2"
             min="1"
             max="31"
+            required
           />
+          <p id="day-error"></p>
         </div>
-        <div class="date">
-          <p>MONTH</p>
+        <div class="date month">
+          <p id="month-header">MONTH</p>
           <input
             type="text"
             name="month"
             id="month-input"
-            oninput="month()"
+            oninput="monthValidate()"
             placeholder="MM"
             maxlength="2"
             size="2"
             min="1"
             max="12"
+            required
           />
+          <p id="month-error"></p>
         </div>
-        <div class="date">
-          <p>YEAR</p>
+        <div class="date year">
+          <p id="year-header">YEAR</p>
           <input
             type="text"
             name="year"
             id="year-input"
-            oninput="year()"
+            oninput="yearValidate()"
             placeholder="YYYY"
             maxlength="4"
             size="4"
+            required
           />
+          <p id="year-error"></p>
         </div>
       </div>
       <div class="svg">
         <hr class="line" />
-        <svg
-          id="btn"
-          onclick="calculate()"
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="34"
-          viewBox="0 0 46 44"
-        >
-          <g fill="none" stroke="#FFF" stroke-width="2">
-            <path
-              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
-            />
-          </g>
-        </svg>
+        <button type="submit" id="btn" onclick="calculate()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="34"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
       </div>
       <div class="result">
         <h1><span class="num-color" id="years">--</span>years</h1>

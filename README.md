@@ -59,6 +59,7 @@ input {
 ```
 
 ```js
+/* I learnt how to use javascript date to calculate age in years, months and days  and I also learnt form validation with javascript i.e: to be able to use javascript to detect errors after dates have been entered and also if no values are entered at all and if the wrong date is entered */
 const proudOfThisFunc = () => {
   console.log("🎉");
 };
